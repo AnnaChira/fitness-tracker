@@ -18,7 +18,7 @@ router.post("/api/workouts", ({ body }, res) => {
       });
   });
   
-  router.post("/api/workout/add", ({ body }, res) => {
+  router.post("/api/workout/excerise", ({ body }, res) => {
     Workout.insertMany(body)
       .then(dbWorkout => {
         res.json(dbWorkout);
